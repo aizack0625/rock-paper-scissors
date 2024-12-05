@@ -57,5 +57,5 @@ table {
 
 .btn_pushed {
   cursor: default;
-  background: #ccc;
+  opacity: 0.6;
 }
