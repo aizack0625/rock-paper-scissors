@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <p>相手</p>
+  <div id="partner_img">
+    <img src="./images/man.png" alt="相手の画像" width="100">
+  </div>
+  <img src="./images/rock.png" alt="ぐー" width="60" id="partner_hand">
+  <p id="intro">最初はグー、じゃんけん...</p>
+  <button id="retly">もう一度する!</button>
+  <p id="result"></p>
+  <p class="me">自分</p>
+  <div id="my_hand">
+    <img src="./images/rock.png" alt="グー" width="100" height="100" id="rock" class="rock">
+    <img src="./images/scissors.png" alt="チョキ" width="100" height="100" id="scissors" class="scissors">
+    <img src="./images/paper.png" alt="パー" width="100" height="100" id="paper" class="paper">
+  </div>
+  <table>
+    <tr>
+      <th>成績</th>
+    </tr>
+    <tr>
+      <th>勝ち</th>
+      <th>分け</th>
+      <th>負け</th>
+    </tr>
+    <tr>
+      <td id="win"></td>
+      <td id="draw"></td>
+      <td id="lose"></td>
+    </tr>
+  </table>
+  <script src="main.js"></script>
+</body>
+
+</html>

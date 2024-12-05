@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  background: rgb(253, 255, 249);
+}
+.container {
+  text-align: center;
+}
+
+#partner_img {
+  z-index: 1;
+}
+
+#partner_hand {
+  position: relative;
+  z-index: 10;
+  top: -65px;
+  left: -50px;
+}
+
+#intro {
+  position: relative;
+  z-index: 9;
+  top: -50px;
+}
+
+#result {
+  font-size: 24px;
+  color: rgb(235, 135, 135);
+}
+
+#retly {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 6px;
+  background: rgb(181, 226, 244);
+  border: 1px solid rgb(9, 185, 255);
+  border-radius: 10px;
+}
+
+.rock, .scissors, .paper {
+  cursor: pointer;
+  margin: 10px;
+  border: 2px solid rgb(249, 202, 202);
+  border-radius: 20px;
+  background: rgba(135, 207, 235, 0.2);
+}
+
+table {
+  position: absolute;
+  z-index: 20;
+  top: 500px;
+  right: 20px;
+}
+
+.btn_pushed {
+  cursor: default;
+  background: #ccc;
+}
