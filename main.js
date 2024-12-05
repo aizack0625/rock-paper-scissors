@@ -21,6 +21,9 @@ const choices = [
 
 //　自分がグーを出した時
 rock.addEventListener('click', () => {
+  if (rock.classList.contains('btn_pushed')) { //手を出したら押せなくする
+    return;
+  }
   rock.classList.add('btn_pushed'); //出した手を押せないような表示にする
   scissors.style.display = 'none';
   paper.style.display = 'none';
@@ -39,10 +42,15 @@ rock.addEventListener('click', () => {
   intro.innerHTML = 'ポン!';
   retlyGame();
   updateScore(result.innerHTML);
+  // ボタンのイベントリスナーを削除
+  rock.removeEventListener('click', arguments.callee);
 });
 
 //　自分がチョキを出した時
 scissors.addEventListener('click', () => {
+  if (scissors.classList.contains('btn_pushed')) {
+    return;
+  }
   scissors.classList.add('btn_pushed');
   rock.style.display = 'none';
   paper.style.display = 'none';
@@ -65,6 +73,9 @@ scissors.addEventListener('click', () => {
 
 //　自分がパーを出した時
 paper.addEventListener('click', () => {
+  if (paper.classList.contains('btn_pushed')) {
+    return;
+  }
   paper.classList.add('btn_pushed');
   rock.style.display = 'none';
   scissors.style.display = 'none';
